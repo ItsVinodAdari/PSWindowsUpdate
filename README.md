@@ -42,3 +42,9 @@ If($objService.IsDefaultAUService -eq $True)
     Break
 }
 ```
+
+## Common commands
+A few commands that I use frequently.
+```powershell
+Get-WuInstall -AcceptAll -IgnoreUserInput -AutoReboot -Confirm:$false -nottitle 'preview' -updatecount 80
+```
