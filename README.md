@@ -33,7 +33,7 @@ ServiceID                            IsManaged IsDefault Name
 3da21691-e39d-4da6-8a4b-b43877bcb1b7 True      True      Windows Server Update Service
 ```
 
-That said, the logic in Michal's script is correct in that when -WindowsUdpate, -MicrosoftUpdate, and -ServiceID are **not** specified the process will default to whatever ServiceID has IsDefault=True (in most cases the Windows Server Update Service). This logic is shown below.
+That said, the logic in Michal's script is correct in that when -WindowsUpdate, -MicrosoftUpdate, and -ServiceID are **not** specified the process will default to whatever ServiceID has IsDefault=True (in most cases the Windows Server Update Service). This logic is shown below.
 
 ```powershell
 If($objService.IsDefaultAUService -eq $True)
